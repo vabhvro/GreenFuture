@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GREENFUTURE.COM</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <section class="nav1">
+            <nav>
+                <h1><a href="index.html">GreenFuture</a></h1>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                        <li><a href="#Guidelines">Guidelines</a></li>
+                        <li><a href="#Range">Range</a></li>
+                        <li><a href="#Future">Future</a></li>
+                        <li><a href="#contribute">Contribute</a></li>
+                        <li><a href="#call">Contact</a></li>
+                        <li><a href="#acc">Account</a></li>
+                        <li><a href="#buy" class="btn-header">Buy EVs</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </section>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Electric Vehicles Awareness</h2>
+            <p>Join the movement to reduce emissions and save the planet by embracing electric vehicles (EVs). Discover the benefits, challenges, and how you can contribute to a greener future.</p>
+        </div>
+    </section>
+
+    <section id="benefits" class="info-section">
+        <div class="container">
+            <h2>Benefits of Electric Vehicles</h2>
+            <ul>
+                <li>Lower greenhouse gas emissions</li>
+                <li>Reduced air pollution</li>
+                <li>Energy-efficient and cost-effective</li>
+                <li>Less dependence on fossil fuels</li>
+                <li>Lower maintenance costs</li>
+                <li>Quiet operation, reducing noise pollution</li>
+                <li>Government incentives and rebates available</li>
+                <li>Enhanced driving experience with instant torque</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="Guidelines" class="info-section">
+        <div class="container">
+            <h2>Government Guidelines for Electric Vehicles</h2>
+            <ul>
+                <li>Incentives and Subsidies</li>
+                <li>Charging Infrastructure Development</li>
+                <li>Emission Standards & Regulations</li>
+                <li>Public Sector EV Adoption</li>
+                <li>Environmental and Sustainability Guidelines</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="Range" class="info-section">
+        <div class="container">
+            <h2>Range of Electric Vehicles</h2>
+            <ul>
+                <li>Entry-Level EVs (Short Range)<br> Range: 100 to 200 miles (160 to 320 km) per charge</li>
+                <li>Mid-Range EVs (Moderate Range)<br> Range: 200 to 300 miles (320 to 480 km) per charge.</li>
+                <li>Long-Range EVs (High Range)<br> Range: 300 to 400 miles (480 to 640 km) per charge.</li>
+                <li>Premium EVs and Electric SUVs (Luxury & High Performance)<br> Range: 250 to 370 miles (400 to 600 km) per charge.</li>
+                <li>Electric Trucks & Vans<br> Range: 250 to 400 miles (400 to 640 km) per charge</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="Future" class="info-section">
+        <div class="container">
+            <h2>Future Trends and Range Projection</h2>
+            <ul>
+                <li>Solid-State Batteries<br> These increase the energy density of batteries, which could allow for ranges of 500-700 miles (800-1,100 km) on a single charge in the near future.</li>
+                <li>Ultra-Fast Charging<br> Faster charging times make it more feasible to travel long distances even if the vehicle doesn't have the highest range.</li>
+                <li>Range Extension via Software<br> Some manufacturers, such as Tesla, are enhancing range through over-the-air software updates that improve energy efficiency and battery management.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contribute" class="info-section">
+        <div class="container">
+            <h2>How You Can Help</h2>
+            <p>Spread awareness, advocate for cleaner transportation policies, support the development of charging infrastructure, and consider making the switch to an electric vehicle yourself!</p>
+            <p>Why EVs are better than petrol vehicles:</p>
+            <ul>
+                <li>EVs produce zero tailpipe emissions, significantly reducing air pollution.</li>
+                <li>Petrol vehicles emit harmful greenhouse gases, contributing to climate change.</li>
+                <li>Switching to EVs reduces our dependence on fossil fuels, which are finite and environmentally damaging to extract.</li>
+                <li>EVs offer a sustainable solution for the future of transportation.</li>
+            </ul>
+            <a href="https://en.wikipedia.org/wiki/Electric_vehicle" target="_blank" class="btn">Learn More</a>
+        </div>
+    </section>
+
+
+    <section class="buy-evs" id="buy">
+        <div class="container">
+            <h2>Buy Electric Vehicles</h2>
+            <div class="ev-links">
+                <a href="https://olaelectric.com" target="_blank">Ola Electric</a>
+                <a href="https://www.atherenergy.com" target="_blank">Ather Energy</a>
+                <a href="https://www.tatamotors.com/product/ev/" target="_blank">Tata EVs</a>
+                <a href="https://www.mgmotor.co.in/electric-cars" target="_blank">MG Electric</a>
+                <a href="https://www.hyundai.com/in/en/find-a-car/kona-electric" target="_blank">Hyundai Kona</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="account" id="acc">
+        <div class="container">
+            <h2><i class="fa fa-user-plus"></i>Create an Account</h2>
+            <p>Join our community and stay updated on electric vehicle news and promotions.</p>
+            <form action="#" method="post">
+                <label for="name"></label>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <label for="email"></label>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <label for="password"></label>
+                <input type="password" id="password" placeholder="Create a Password" required>
+                <label for="confirm-password"></label>
+                <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+                <button type="submit">Create Account</button>
+            </form>
+        </div>
+    </section>
+
+
+    <section class="contact" id="call">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need more information, feel free to reach out!</p>
+            <form action="#" method="post">
+                <label for="contact-name"></label>
+                <input type="text" id="contact-name" placeholder="Your Name" required>
+                <label for="contact-email"></label>
+                <input type="email" id="contact-email" placeholder="Your Email" required>
+                <label for="message"></label>
+                <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 GREENFUTURE.COM. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+   <script src="./ev.js"></script>
+</body>
+</html>

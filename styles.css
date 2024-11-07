@@ -1,0 +1,452 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #3a6073, #16222A);
+    color: #fff;
+    padding: 1rem 0;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 12000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 a {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: 1rem;
+}
+
+header nav ul li {
+    margin-right: 2rem; 
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #1e3c45;
+    border-radius: 5px;
+}
+
+
+header nav ul li a.btn-header {
+    background-color: #3ed0ac;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a.btn-header:hover {
+    background-color: #16a085;
+}
+
+.hero {
+    background: url('ev.jpg') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    z-index: 2;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+    z-index: 2;
+}
+
+.info-section {
+    padding: 4rem 0;
+    text-align: center;
+    background-color: #fff;
+    margin-top: -50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.info-section h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.info-section ul {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 2rem auto 0;
+}
+
+.info-section ul li {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    padding: 1rem;
+    background: #ecf0f1;
+    border-radius: 10px;
+    color: #34495e;
+    transition: background-color 0.3s ease;
+}
+
+.info-section ul li:hover {
+    background-color: #d5dbdb;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background: #1abc9c;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+.btn:hover {
+    background-color: #16a085;
+}
+
+.buy-evs {
+    background-color: #34495e;
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.buy-evs h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.buy-evs .ev-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.buy-evs .ev-links a {
+    background-color: #1abc9c;
+    color: #fff;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-evs .ev-links a:hover {
+    background-color: #16a085;
+}
+
+.account {
+    padding: 4rem 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.account h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.account h2 i {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+    color: #1abc9c;
+}
+
+.account p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.account form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.account input {
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.account button {
+    padding: 1rem;
+    background: #1abc9c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.account button:hover {
+    background-color: #16a085;
+}
+
+.contact {
+    padding: 4rem 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input,
+.contact textarea {
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact button {
+    padding: 1rem;
+    background: #1abc9c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-us button:hover {
+    background-color: #16a085;
+}
+
+footer {
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+@media (max-width: 700px) {
+    .container {
+        margin-left: 10%;
+        margin-right: 10%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .info-section h2,
+    .buy-evs h2,
+    .account h2,
+    .contact h2 {
+        font-size: 2rem;
+    }
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+
+.nav1 i {
+    font-size: 2rem;
+}
+
+.nav-links ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links ul li {
+    margin-right: 2rem; 
+}
+
+.nav-links ul li a {
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.nav-links ul li a:hover {
+    background-color: #1e3c45; 
+}
+
+.nav-links ul li a.btn-header {
+    background-color: #3ed0ac;
+    padding: 0.5rem 1.5rem; 
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links ul li a.btn-header:hover {
+    background-color: #16a085;
+}
+
+.nav-links {
+    position: fixed;
+    background: #1e3c45;
+    height: 100vh;
+    width: 250px;  
+    top: 0;
+    right: -250px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+    padding-top: 60px; 
+}
+
+.nav-links ul {
+    padding: 30px;
+    flex-direction: column;
+    margin-top: 20px; 
+}
+
+.nav-links ul li {
+    margin-bottom: 1.5rem; 
+}
+
+.nav-links ul li a {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;  
+}
+
+.nav-links ul li a:hover {
+    background-color: #16a085; 
+}
+
+
+.nav1 i {
+    font-size: 2rem;
+    color: aliceblue;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 700px) {
+    .nav-links {
+        width: 250px; 
+        padding-top: 60px;
+    }
+
+    .nav-links ul li {
+        margin-bottom: 1.5rem;
+    }
+
+    .nav-links ul li a {
+        padding: 1rem 2rem;  
+        font-size: 1.2rem;
+    }
+
+    nav .fa {
+        display: block;
+        color: aliceblue;
+        margin: 10px;
+        font-size: 28px;
+        cursor: pointer;
+    }
+}
